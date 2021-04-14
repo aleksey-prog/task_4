@@ -14,8 +14,8 @@ cursor.execute('''CREATE TABLE if NOT EXISTS "keywords" ("id" INTEGER NOT NULL U
 conn.commit()
 conn.close()
 
-bot = telebot.TeleBot('TOKEN', parse_mode=None)
-api = NewsApiClient(api_key='API_KEY')
+bot = telebot.TeleBot('TOKEN', parse_mode=None)  # Ввести токен
+api = NewsApiClient(api_key='API_KEY')  # Ввести newsapi ключ
 
 available_categories = ('business', 'entertainment', 'general', 'health', 'science', 'sports', 'technology')
 
