@@ -70,6 +70,7 @@ def news_get_by_keyword(message):
         bot.send_message(cid, '/----------------------/')
         for i in range(10):
             bot.send_message(cid, all_articles['articles'][i]['title'])
+            bot.send_message(cid, all_articles['articles'][i]['url'])
 
 
 @bot.message_handler(commands=['delete_keywords'])
@@ -123,6 +124,7 @@ def news_get_by_category(message):
         bot.send_message(cid, '/----------------------/')
         for i in range(10):
             bot.send_message(cid, all_articles['articles'][i]['title'])
+            bot.send_message(cid, all_articles['articles'][i]['url'])
 
 
 @bot.message_handler(commands=['delete_categories'])
